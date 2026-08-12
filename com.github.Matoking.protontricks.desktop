@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Protontricks
+Comment=Manage Winetricks verbs for Proton prefixes.
+Exec=protontricks --gui
+Icon=wine
+Terminal=false
+Type=Application
+Categories=Game;Utility;
