@@ -1,26 +1,25 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v2.json",
-  "manifest_version": "2.0",
+  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v3.json",
+  "manifest_version": "3.0",
   "name": "Protontricks",
   "description": "Manage Winetricks verbs for Proton prefixes.",
   "version": "1.14.1",
-  "image": "ghcr.io/containerpak/protontricks:main",
-  "binaries": ["/usr/local/bin/protontricks"],
-  "desktop_entries": ["/usr/share/applications/com.github.Matoking.protontricks.desktop"],
+  "image": "ghcr.io/containerpak/protontricks@sha256:9f79b1febda41199c02be7c03e772f3cc630442f82b504a27d0a282db3a4c1c0",
+  "binaries": [
+    "/usr/local/bin/protontricks"
+  ],
+  "desktop_entries": [
+    "/usr/share/applications/com.github.Matoking.protontricks.desktop"
+  ],
   "dependencies": [],
   "addons": [],
   "idle_time": 0,
   "override": {
-    "socketX11": true,
     "socketWayland": true,
     "socketPulseAudio": false,
-    "socketSessionBus": true,
-    "socketSystemBus": false,
     "socketSshAgent": false,
     "socketCups": false,
     "socketGpgAgent": false,
-    "socketAtSpiBus": true,
-    "socketBluetooth": false,
     "deviceDri": false,
     "deviceKvm": false,
     "deviceShm": false,
@@ -32,7 +31,12 @@
     "deviceAll": false,
     "notification": true,
     "openURI": false,
-    "filesystem": [{"path": "home", "access": "read-write"}],
+    "filesystem": [
+      {
+        "path": "home",
+        "access": "read-write"
+      }
+    ],
     "env": [],
     "network": true,
     "process": false,
@@ -40,7 +44,6 @@
     "memoryMaxMB": 0,
     "cpuQuota": 0,
     "pidsMax": 0,
-    "asRoot": false,
-    "allowedHostCommands": []
+    "asRoot": false
   }
 }
