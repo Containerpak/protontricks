@@ -4,7 +4,7 @@
   "name": "Protontricks",
   "description": "Manage Winetricks verbs for Proton prefixes.",
   "version": "1.14.1",
-  "image": "ghcr.io/containerpak/protontricks@sha256:4cfd84670939a5ac008c25391e6c375229fd604b090178d6a2545a0a3bef122d",
+  "image": "ghcr.io/containerpak/protontricks@sha256:896cd76ca90b22c295d6be09325e1a50b282449eaa13cb20e25bf65cd729332e",
   "binaries": [
     "/usr/local/bin/protontricks"
   ],
